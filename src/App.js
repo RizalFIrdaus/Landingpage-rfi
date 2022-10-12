@@ -1,20 +1,21 @@
 import './App.css';
-import Prop from './component/Prop';
-import State from './component/State';
+import Prop from './section/Prop';
+import State from './section/State';
+import Navbar from './component/Navbar';
+import Hero from './component/Hero';
+
 function App() {
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <div className='text-center mb-20'>
-          <p className='text-[72px] '>MewCount</p>
-          <p className='text-[24px] font-light text-stone-400 '>By Rizal</p>
-        </div>
-       <State />
-       <div>
-       </div>
-      </header>
-    </div>
+    <>
+    <section className="myNavbar">
+        <Navbar/>
+    </section>
+    <section className='myHero'>
+     <Hero/>
+    </section>
+       
+    </>
   );
 }
 
