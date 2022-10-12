@@ -11,6 +11,8 @@ function App() {
           <p className='text-[24px] font-light text-stone-400 '>By Rizal</p>
         </div>
        <State />
+       <div>
+       </div>
       </header>
     </div>
   );
