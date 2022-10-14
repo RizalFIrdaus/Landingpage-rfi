@@ -3,17 +3,17 @@ import Prop from './section/Prop';
 import State from './section/State';
 import Navbar from './component/Navbar';
 import Hero from './component/Hero';
+import About from './component/About';
 
-function App() {
+
+
+
+const App = ()=> {
 
   return (
-    <>
-    <section className="myNavbar">
-        <Navbar/>
-    </section>
-    <section className='myHero'>
-     <Hero/>
-    </section>
+    <> 
+    <Navbar/>
+     <About />
        
     </>
   );
