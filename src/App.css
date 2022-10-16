@@ -138,3 +138,40 @@
   background: rgba(255, 255, 255, 0.6);
   filter: blur(750px);
 }
+.animate-enter {
+  opacity: 0;
+  transform:translateY(-100%);
+}
+.animate-enter-active {
+  opacity: 1;
+  transform:translateX(0);
+  transition: opacity 1000ms, transform 1000ms;
+}
+.animate-exit {
+  opacity: 1;
+  transform:translateX(0);
+}
+.animate-exit-active {
+  opacity: 0;
+  transform:translateX(-100%);
+  transition: opacity 1000ms, transform 1000ms;
+}
+
+.sosmed-enter {
+  opacity: 0;
+  transform:translateY(100%);
+}
+.sosmed-enter-active {
+  opacity: 1;
+  transform:translateY(0);
+  transition: opacity 1000ms, transform 1000ms;
+}
+.sosmed-exit {
+  opacity: 1;
+  transform:translateX(0);
+}
+.sosmed-exit-active {
+  opacity: 0;
+  transform:translateX(-100%);
+  transition: opacity 1000ms, transform 1000ms;
+}

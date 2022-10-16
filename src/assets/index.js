@@ -14,6 +14,7 @@ import laravel from '../assets/laravel.png'
 import indofood from '../assets/Indofood.png'
 import petqu from '../assets/PetquShop.png'
 
+
 export{
     email,
     profile,

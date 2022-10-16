@@ -1,14 +1,21 @@
 
-import { about, about_banner, indonesia, react, laravel, indofood, petqu } from "../assets"
+import { about, indonesia, react, laravel, indofood, petqu } from "../assets"
 import styles from "../style"
+import Banner from "./Banner"
+import 'aos/dist/aos.css';
+import AOS from 'aos';
+import { useEffect } from "react";
 const About = () => {
+
+    useEffect(() => {
+        AOS.init();
+    })
+
     return (
         <>
-            <div className=" w-full h-[40vh] overflow-hidden">
-                <img src={about_banner} />
-            </div>
+            <Banner />
             <div className="md:px-24 sm:ml-10">
-                <div className="flex items-center justify-start xxs:flex-col sm:flex-row ">
+                <div data-aos="zoom-in" className="flex items-center justify-start xxs:flex-col sm:flex-row ">
                     <div className="avatar sm:top-[-100px] xxs:top-[-50px]">
                         <div className="sm:w-[200px] rounded-full ring ring-[#33bbcf] ring-offset-[#7de7eb] ring-offset-8 xxs:ring-offset-2  xxs:w-[100px]">
                             <img
@@ -25,7 +32,7 @@ const About = () => {
                     </div>
                 </div>
 
-                <div className="flex lg:flex-row sm:flex-col font-poppins xxs:flex-col">
+                <div data-aos="zoom-in" className="flex lg:flex-row sm:flex-col font-poppins xxs:flex-col">
                     <h1 className="font-semibold sm:text-[32px] xxs:text-[24px] lg:mr-10 sm:text-center sm:mb-8 xxs:text-center">About</h1>
                     <div className="flex flex-col sm:px-20">
                         <p className="font-poppins font-light leading-8 max-w-[1200px] sm:text-justify  xxs: text-justify lg:text-left sm:p-0 xxs:px-4">Hello, i'am a frontend developer Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate repellendus in excepturi culpa voluptas id ipsa ducimus quod, ratione sequi cumque nesciunt tempora reprehenderit! Totam animi beatae voluptate labore nulla? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt provident dicta in ducimus officia magnam accusamus. Architecto saepe expedita ipsam.</p>
@@ -70,7 +77,7 @@ const About = () => {
                 <div className="flex sm:flex-col lg:flex-row font-poppins sm:my-20 xxs:my-0 flex-wrap xxs:flex-col xxs:text-center sm:text-left">
                     <h1 className="font-semibold text-[32px] sm:text-center sm:mb-10 lg:mr-10 xxs:mb-5 ">Experience</h1>
                     <div className="lg:pr-10 sm:pl-32 sm:pr-32 sm:mb-10 lg:flex lg:mx-0 lg:px-0 lg:flex-wrap xxs:px-4">
-                        <div className="card card-side bg-base-200 shadow-xl text-white mb-10 lg:w-[400px]">
+                        <div data-aos="fade-up" className="card card-side bg-base-200 shadow-xl text-white mb-10 lg:w-[400px]">
                             <div className="card-body">
                                 <h2 className="card-title mb-4">Web Developer</h2>
                                 <div className="flex flex-row">
@@ -106,7 +113,7 @@ const About = () => {
                             </div>
                         </div>
 
-                        <div className="card card-side bg-base-200 shadow-xl text-white mb-10 lg:mx-10 lg:w-[400px]">
+                        <div data-aos="fade-up" className="card card-side bg-base-200 shadow-xl text-white mb-10 lg:mx-10 lg:w-[400px]">
                             <div className="card-body">
                                 <h2 className="card-title mb-4">Software Skill</h2>
                                 <div className="flex flex-row">
@@ -143,7 +150,7 @@ const About = () => {
 
                             </div>
                         </div>
-                        <div className="card card-side bg-base-200 shadow-xl text-white mb-10 lg:w-[400px]">
+                        <div data-aos="fade-up" className="card card-side bg-base-200 shadow-xl text-white mb-10 lg:w-[400px]">
                             <div className="card-body">
                                 <h2 className="card-title mb-4">Design</h2>
                                 <div className="flex flex-row">
@@ -175,17 +182,17 @@ const About = () => {
                 <div className="flex md:flex-row font-poppins my-20 xxs:flex-col">
                     <h1 className="font-semibold text-[32px] lg:text-left sm:mb-10 xxs:mb-5 xxs:text-center">Project</h1>
                     <div className="flex flex-col ">
-                        <div className="card lg:card-side bg-base-200 shadow-2xl lg:ml-24 sm:mr-10 lg:mr-0 sm:mb-20 xxs:mx-4 xxs:mb-10">
+                        <div data-aos="fade-up" className="card md:card-side bg-base-200 shadow-2xl lg:ml-24 sm:mr-10 lg:mr-0 sm:mb-20 xxs:mx-4 xxs:mb-10">
                             <figure><img src={indofood} className="sm:w-[400px] rounded-xl pl-2" alt="Album" /></figure>
                             <div className="card-body">
                                 <h2 className="card-title">Redesin Website Indofood</h2>
-                                <p className="max-w-[800px] sm:leading-8 xxs:leading-7 py-4 sm:text-left xxs:text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta impedit ipsum, nobis explicabo cupiditate, doloremque minus similique eaque quibusdam eius reiciendis debitis consectetur est distinctio velit et vel, magni tenetur commodi consequatur unde..</p>
+                                <p className="max-w-[800px] sm:leading-8 xxs:leading-7 py-4 sm:text-left xxs:text-justify ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta impedit ipsum, nobis explicabo cupiditate, doloremque minus similique eaque quibusdam eius reiciendis debitis consectetur est distinctio velit et vel, magni tenetur commodi consequatur unde..</p>
                                 <div className="card-actions justify-end">
                                     <button className="btn btn-primary">Detail</button>
                                 </div>
                             </div>
                         </div>
-                        <div className="card lg:card-side bg-base-200 shadow-2xl lg:ml-24 sm:mr-10 lg:mr-0 sm:mb-20 xxs:mx-4 xxs:mb-10">
+                        <div data-aos="fade-up" className="card md:card-side bg-base-200 shadow-2xl lg:ml-24 sm:mr-10 lg:mr-0 sm:mb-20 xxs:mx-4 xxs:mb-10">
                             <figure><img src={petqu} className="sm:w-[400px] rounded-xl pl-2" alt="Album" /></figure>
                             <div className="card-body">
                                 <h2 className="card-title">PetquShop</h2>

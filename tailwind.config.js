@@ -13,6 +13,9 @@ module.exports = {
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
       },
+      backgroundImage: {
+        contact: "url('/public/contact.jpg')",
+      }
     },
     screens: {
       xxxs: "240px",
@@ -21,7 +24,7 @@ module.exports = {
       ss: "620px",
       sm: "768px",
       md: "1060px",
-      lg: "1200px",
+      lg: "1320px",
       xl: "1700px",
     },
   },
